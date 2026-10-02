@@ -1,12 +1,20 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #e3f4fd;
+  --background-deep: #b9e2f7;
+  --foreground: #12324a;
+  --button-bg: #ff8c1a;
+  --button-bg-hover: #ff9d3b;
+  --button-shadow: #c45f00;
+  --button-text: #2a1300;
+  --focus-ring: #12324a;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0d2233;
+    --background-deep: #071520;
+    --foreground: #e3f4fd;
+    --focus-ring: #ffd43b;
   }
 }
 
@@ -25,7 +33,7 @@ body {
   display: flex;
   flex-direction: column;
   color: var(--foreground);
-  background: var(--background);
+  background: radial-gradient(circle at 50% 35%, var(--background), var(--background-deep));
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
